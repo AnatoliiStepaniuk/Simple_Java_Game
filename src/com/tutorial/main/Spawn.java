@@ -12,6 +12,7 @@ public class Spawn {
 		if(Game.hud.getLevel() != prevLevel){ // do only when level changes
 			prevLevel = Game.hud.getLevel();
 		if(Game.hud.getLevel() == 2)
+//			Game.gameHandler.addObject(new ExplosiveEnemy(r.nextInt(Game.WIDTH-32),r.nextInt(Game.HEIGHT-32), Game.gameHandler));
 			Game.gameHandler.addObject(new BasicEnemy(r.nextInt(Game.WIDTH-32),r.nextInt(Game.HEIGHT-32), Game.gameHandler));
 				else if(Game.hud.getLevel() == 3){
 			Game.gameHandler.addObject(new BasicEnemy(r.nextInt(Game.WIDTH-32),r.nextInt(Game.HEIGHT-32), Game.gameHandler));
@@ -24,7 +25,7 @@ public class Spawn {
 			Game.gameHandler.addObject(new SmartEnemy(r.nextInt(Game.WIDTH-32),r.nextInt(Game.HEIGHT-32), Game.gameHandler));
 		}
 		else if(Game.hud.getLevel() == 6){
-			Game.gameHandler.addObject(new FastEnemy(r.nextInt(Game.WIDTH-32),r.nextInt(Game.HEIGHT-32), Game.gameHandler));
+			Game.gameHandler.addObject(new ExplosiveEnemy(r.nextInt(Game.WIDTH-32),r.nextInt(Game.HEIGHT-32), Game.gameHandler));
 		}
 		else if(Game.gameState == Game.STATE.Boss){
 					Game.gameHandler.clearEnemies();

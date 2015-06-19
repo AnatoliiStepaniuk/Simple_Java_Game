@@ -9,7 +9,8 @@ public enum ID {
 	MenuParticle,
 	HealthCoin,
 	ScoreCoin,
-	BasicEnemy
+	BasicEnemy,
+	ExplosiveEnemy
 }
 
 
