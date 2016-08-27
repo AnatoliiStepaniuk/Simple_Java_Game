@@ -2,6 +2,8 @@
 
 Basic desktop 2D game using Java Swing toolkit.
 
+The goal is to dodge the different enemies.
+
 **Implemented features:**
 
 1. Multiple levels (including The Boss level).
